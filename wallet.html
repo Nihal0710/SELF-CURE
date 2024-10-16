@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthChain - Secure Decentralized Login</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #2c3e50;
+            --background-color: #f4f7f9;
+            --text-color: #333;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .login-container {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #3a7bc8;
+        }
+
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-item {
+            flex: 1 1 calc(50% - 0.5rem);
+            background-color: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+
+        @media (max-width: 768px) {
+            .benefit-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HealthChain - Secure Decentralized Login</h1>
+    </header>
+
+    <main>
+        <section class="login-container">
+            <h2>Login with Web3 Wallet</h2>
+            <p>Connect your Web3 wallet to securely access your health data using Decentralized Identity (DID).</p>
+            <a href="#" class="btn" id="connect-wallet">Connect Wallet</a>
+        </section>
+
+        <section class="benefits">
+            <div class="benefit-item">
+                <h3>Complete Data Ownership</h3>
+                <p>Retain full control over your health data with blockchain technology.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Passwordless Authentication</h3>
+                <p>Secure, wallet-based authentication eliminates vulnerable passwords.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Tamper-Proof Access</h3>
+                <p>Blockchain logs ensure transparency and accountability for all data access.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Seamless, Secure Sharing</h3>
+                <p>Grant or revoke access to your health records through smart contracts.</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>General Support: +1 (800) 123-4567</p>
+            <p>Support Email: support@devdrivers.com</p>
+            <p>Partnerships: partnerships@devdrivers.com</p>
+            <p>Emergency Support: +1 (800) 987-6543</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HealthCure. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('connect-wallet').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Connecting to Web3 wallet... (This is a placeholder. Implement actual Web3 wallet connection here.)');
+        });
+    </script>
+</body>
+</html>
